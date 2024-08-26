@@ -1,0 +1,8 @@
+
+javac -d out -cp "libs/junit-4.13.2.jar;libs/hamcrest-core-1.3.jar" src/main/java/Calculadora.java src/test/java/CalculadoraTeste.java
+
+java -cp "out;libs/junit-4.13.2.jar;libs/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore test.java.CalculadoraTeste
+
+dir out\test\java
+
+rmdir /S /Q out
